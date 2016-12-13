@@ -9,4 +9,10 @@ addButton.onclick = function() {
   var ul = document.querySelectorAll('ul')[0];
   ul.appendChild(li);
   input.value = " ";
+  var removeButton = document.createElement('button');
+  removeButton.innerText = "remove";
+  li.appendChild(removeButton);
+  removeButton.onclick = function() {
+	li.remove();
+  };
 };
