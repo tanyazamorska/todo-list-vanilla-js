@@ -1,7 +1,7 @@
 "use strict";
 
 var addButton = document.querySelectorAll('button')[0];
-addButton.onclick = function() {
+addButton.onclick = function () {
   var input = document.querySelectorAll('input')[0];
   var inputValue = input.value;
   var li = document.createElement('li');
@@ -12,4 +12,7 @@ addButton.onclick = function() {
   var deleteButton = document.createElement('button');
   deleteButton.innerText = "delete";
   li.appendChild(deleteButton);
+  deleteButton.onclick = function () {
+	li.remove();
+  };
 };
