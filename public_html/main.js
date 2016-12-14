@@ -10,6 +10,7 @@ addButton.onclick = function () {
   ol.appendChild(li);
   input.value = '';
   var deleteButton = document.createElement('button');
+  deleteButton.style.cssText = "font-size:12px;margin:2px;";
   deleteButton.innerText = "delete";
   li.appendChild(deleteButton);
   deleteButton.onclick = function () {
